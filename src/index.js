@@ -4,7 +4,6 @@ import {compose, createStore, applyMiddleware} from "redux";
 import App from './App';
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk'
-import reportWebVitals from './reportWebVitals';
 import {rootReducer} from "./redux/rootReducer";
 import {forbiddenWordsMiddleware} from "./redux/middleware";
 import createSagaMiddleware from 'redux-saga'
@@ -29,4 +28,3 @@ const app = (
 
 render(app, document.getElementById('root'));
 
-reportWebVitals();
